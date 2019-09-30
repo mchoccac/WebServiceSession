@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="linqMovil">
+  <DataContextMoniker Name="/linqMovilDataContext" />
+  <nestedChildShapes>
+    <classShape Id="944a4252-f0d7-4e0c-a171-f1bc442379e7" absoluteBounds="0.75, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/linqMovilDataContext/pais" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d45f9375-ca5c-41f2-a60e-d759e0a566b4" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="37be6447-d5a7-43d5-ad42-2b2814fffe0b" absoluteBounds="3.5, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/linqMovilDataContext/usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54d42d27-2f75-4d7b-b439-153f9e118e19" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.94314697265625); (3.5 : 1.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqMovilDataContext/pais/pais_usuario" />
+      <nodes>
+        <classShapeMoniker Id="944a4252-f0d7-4e0c-a171-f1bc442379e7" />
+        <classShapeMoniker Id="37be6447-d5a7-43d5-ad42-2b2814fffe0b" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

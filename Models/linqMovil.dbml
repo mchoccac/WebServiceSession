@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Persona" Class="linqMovilDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\MSSQLSERVER2017;Initial Catalog=Persona;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="WebService_Conn" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.pais" Member="pais">
+    <Type Name="pais">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="comentarios" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="pais_usuario" Member="usuario" ThisKey="id" OtherKey="pais" Type="usuario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.usuario" Member="usuario">
+    <Type Name="usuario">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="apellido" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="fecha_nacimiento" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="pais" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="pais_usuario" Member="pais1" ThisKey="pais" OtherKey="id" Type="pais" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
